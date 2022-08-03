@@ -164,13 +164,13 @@ button {
   letter-spacing: 0.02em;
 }
 .header-mail {
-  fill: #757575;
+  fill: currentColor;
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
 .header-tel {
-  fill: #757575;
+  fill: currentColor;
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -465,6 +465,8 @@ button {
 .portfolio-button .filter-button:focus {
   color: var(--btn-white);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-title {
@@ -569,6 +571,11 @@ button {
 .footer-section {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
 }
 
 .adress-list .adress {
@@ -600,7 +607,6 @@ button {
 .footer-social {
   padding: 0%;
   margin-left: 70px;
-  margin-right: 90px;
 }
 .footer-title {
   text-transform: uppercase;
@@ -670,6 +676,9 @@ button {
   padding: 15px 16px;
   background-color: transparent;
   transition: bacground-color var(--transition-dur-and-func);
+}
+.footer-subscribe-input:focus {
+  outline: transparent;
 }
 .suscribe-btn:hover,
 .suscribe-btn:focus {
@@ -833,9 +842,11 @@ button {
   box-sizing: border-box;
   cursor: pointer;
   background-image: url(../images/border-checkbox.svg);
+  background-repeat: no-repeat;
   margin-right: 8px;
 }
 .modal-forn-checkbox:checked + .modal-form-checkbox-desc::before {
   background-image: url(../images/icon-check.svg);
+  background-repeat: no-repeat;
   border: transparent;
 }
