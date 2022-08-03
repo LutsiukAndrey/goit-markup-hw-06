@@ -322,38 +322,52 @@
     <section class="section">
       <div class="container">
         <h2 class="section-title">Постоянные клиенты</h2>
-        <ul class="clients">
+        <ul class="clients list">
           <li class="clients-list">
-            <svg class="clients-icon">
-              <use href="./images/symbol-defs.svg#icon-Logo-1" width="106" height="60"></use>
-            </svg>
+            <a href="" class="client-links">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-Logo"></use>
+              </svg>
+            </a>
           </li>
           <li class="clients-list">
-            <svg class="clients-icon">
-              <use href="./images/symbol-defs.svg#icon-Logo-2" width="106" height="60"></use>
-            </svg>
+            <a href="" class="client-links">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-Logo-1"></use>
+              </svg>
+            </a>
           </li>
           <li class="clients-list">
-            <svg class="clients-icon">
-              <use href="./images/symbol-defs.svg#icon-Logo-3" width="106" height="60"></use>
-            </svg>
+            <a href="" class="client-links">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-Logo-2"></use>
+              </svg>
+            </a>
           </li>
           <li class="clients-list">
-            <svg class="clients-icon">
-              <use href="./images/symbol-defs.svg#icon-Logo-4" width="106" height="60"></use>
-            </svg>
+            <a href="" class="client-links">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-Logo-3"></use>
+              </svg>
+            </a>
           </li>
           <li class="clients-list">
-            <svg class="clients-icon">
-              <use href="./images/symbol-defs.svg#icon-Logo-5" width="106" height="60"></use>
-            </svg>
+            <a href="" class="client-links">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-Logo-4"></use>
+              </svg>
+            </a>
           </li>
           <li class="clients-list">
-            <svg class="clients-icon">
-              <use href="./images/symbol-defs.svg#icon-Logo-6" width="106" height="60"></use>
-            </svg>
+            <a href="" class="client-links">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-Logo-5"></use>
+              </svg>
+            </a>
           </li>
         </ul>
+       
+      </div>
       </div>
     </section>
     <!-- Футер -->
@@ -388,7 +402,7 @@
         </div>
 
         <div class="footer-social">
-          <h3 class="social-title">присоединяйтесь</h3>
+          <h3 class="footer-title social-title">присоединяйтесь</h3>
           <ul class="list social-list">
             <li class="footer-social-list-item">
               <a class="footer-social-links" href="#">
@@ -420,8 +434,33 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <h3 class="footer-title">
+            Подпишитесь на рассылку
+          </h3>
+          <form class="footer-subscribe-form">
+            <label for="subscribe" class="visually-hidden">Подпишитесь на рассылку</label>
+            <div class="footer-subscribe-wrapper">
+              <input
+                id="subscribe"
+                class="footer-subscribe-input"
+                type="mail"
+                name="user-email"
+                placeholder="E-mail"
+                required
+              />
+
+            
+            <button class="suscribe-btn" type="submit"><span class="btn-descr">Подписаться</span> 
+              <svg  class="footer-subscribe-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-send" ></use>
+            </svg></button>
+          </div>
+          </form>
+        </div>
       </div>
     </footer>
+    <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-section">
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
@@ -490,7 +529,7 @@
             id="user-policy"
             name="user_policy"
             type="checkbox"
-            class="modal-forn-checkbox"
+            class="modal-forn-checkbox visually-hidden"
             required
           />
 
